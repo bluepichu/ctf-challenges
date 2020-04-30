@@ -1,0 +1,45 @@
+<script>
+console.warn("Loading", window.location.href);
+
+function raf() {
+	document.querySelector("#origin").textContent = window.location.host;
+
+	if (navigator.userActivation.isActive) {
+		document.body.style.background = "#39B54A";
+		document.body.style.color = "#006837";
+		document.querySelector("#status").textContent = "ACTIVE";
+	} else {
+		document.body.style.background = "#CCCCCC";
+		document.body.style.color = "#333333";
+		document.querySelector("#status").textContent = "INACTIVE";
+	}
+
+	console.log("foreground activation state:", navigator.userActivation.isActive);
+
+	requestAnimationFrame(raf);
+}
+
+console.log("initial foreground activation state:", navigator.userActivation.isActive);
+requestAnimationFrame(raf);
+</script>
+
+<style>
+	body {
+		font-family: "Rubik";
+	}
+
+	#origin {
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+
+	#status {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 16px;
+	}
+</style>
+
+<div id="origin"></div>
+<div id="status"></div>
+<a href="http://localhost:12346/">Click me :)</a>

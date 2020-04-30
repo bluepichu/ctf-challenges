@@ -1,0 +1,67 @@
+diff --git a/platform/chromium/vapi-background.js b/platform/chromium/vapi-background.js
+index 461a8e79..c6d15bfa 100644
+--- a/platform/chromium/vapi-background.js
++++ b/platform/chromium/vapi-background.js
+@@ -895,6 +895,11 @@ vAPI.messaging = {
+             port,
+             privileged: port.sender.url.startsWith(this.PRIVILEGED_URL)
+         });
++        port.realPostMessage = port.postMessage;
++        port.postMessage = function() {
++            console.log("uBlock background sending message");
++            port.realPostMessage(...arguments);
++        };
+     },
+
+     setup: function(defaultHandler) {
+@@ -1054,6 +1059,7 @@ vAPI.messaging = {
+
+     onPortMessage: function(request, port) {
+         // prepare response
++        chrome.extension.getBackgroundPage().console.log("uBlock background received message");
+         let callback = this.NOOPFUNC;
+         if ( request.msgId !== undefined ) {
+             callback = this.callbackWrapperFactory(port, request.msgId).callback;
+diff --git a/platform/chromium/vapi-client.js b/platform/chromium/vapi-client.js
+index c8a934de..3f51479a 100644
+--- a/platform/chromium/vapi-client.js
++++ b/platform/chromium/vapi-client.js
+@@ -103,6 +103,7 @@ vAPI.messaging = {
+     disconnectListenerBound: null,
+
+     messageListener: function(details) {
++        console.log("uBlock foreground received message");
+         if ( details instanceof Object === false ) { return; }
+
+         // Response to specific message previously sent
+@@ -202,6 +203,7 @@ vAPI.messaging = {
+     },
+
+     send: function(channel, msg) {
++        console.log("uBlock foreground sending message");
+         // Too large a gap between the last request and the last response means
+         // the main process is no longer reachable: memory leaks and bad
+         // performance become a risk -- especially for long-lived, dynamic
+diff --git a/platform/chromium/webext.js b/platform/chromium/webext.js
+index 4149fde1..d8f09998 100644
+--- a/platform/chromium/webext.js
++++ b/platform/chromium/webext.js
+@@ -165,3 +165,6 @@ return webext;
+
+ // <<<<< end of private scope
+ })();
++
++
++setInterval(() => chrome.extension.getBackgroundPage().console.log("uBlock background activation state:", navigator.userActivation.isActive), 5);
+diff --git a/src/js/contentscript.js b/src/js/contentscript.js
+index f65c3b94..28c0e60b 100644
+--- a/src/js/contentscript.js
++++ b/src/js/contentscript.js
+@@ -1464,6 +1464,7 @@ vAPI.bootstrap = (function() {
+             //   Mind that href may not be a string.
+             const elem = ev.target.closest('a[href]');
+             if ( elem === null || typeof elem.href !== 'string' ) { return; }
++            console.log("Sending message due to link click");
+             vAPI.messaging.send('contentscript', {
+                 what: 'maybeGoodPopup',
+                 url: elem.href || '',

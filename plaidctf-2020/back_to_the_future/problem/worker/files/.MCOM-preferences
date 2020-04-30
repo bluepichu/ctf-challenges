@@ -1,0 +1,56 @@
+MCOM-X-Client-Prefs-1.0
+
+SHOW_TOOLBAR:		True
+SHOW_URL:		False
+SHOW_DIRECTORY_BUTTONS:	True
+AUTOLOAD_IMAGES:	True
+SHOW_SECURITY_BAR:	True
+TOOLBAR_ICONS:		True
+TOOLBAR_TEXT:		True
+HOME_DOCUMENT:		http://home.mcom.com/home/welcome.html
+FONT_SIZE:		1
+UNDERLINE_LINKS:	True
+HISTORY_EXPIRATION:	30
+TMPDIR:			/tmp
+TN3270:			xterm -e tn3270 %h
+TELNET:			xterm -e telnet %h %p
+RLOGIN:			xterm -e rlogin %h
+RLOGIN_USER:		xterm -e rlogin %h -l %u
+NNTPSERVER:		news
+NEWSRC:			/home/bttf/.newsrc
+NEWSGROUP_DESCRIPTIONS:	True
+REAL_NAME:		bttf
+EMAIL_ADDRESS:		bttf
+ORGANIZATION:
+SIGNATURE_FILE:		/home/bttf/.signature
+MAILHOST:		localhost
+SOCKS_HOST:
+FTP_PROXY:
+HTTP_PROXY:
+NEWS_PROXY:
+GOPHER_PROXY:
+WAIS_PROXY:
+NO_PROXY:
+MEMORY_CACHE_SIZE:	2000
+DISK_CACHE_SIZE:	5000
+NETWORK_BUFFER_SIZE:	1
+MAX_CONNECTIONS:	4
+CACHE_DIR:		/home/bttf/.MCOM-cache/
+LICENSE_ACCEPTED:	1000 0.96 Beta
+DITHER_IMAGES:		True
+STREAMING_IMAGES:	True
+MIME_TYPES:		/usr/local/lib/netscape/mime.types
+PERSONAL_MIME_TYPES:	/home/bttf/.mime.types
+MAILCAP:		/usr/local/lib/netscape/mailcap
+PERSONAL_MAILCAP:	/home/bttf/.mailcap
+WARN_ENTER_SECURE:	True
+WARN_LEAVE_SECURE:	True
+WARN_MIXED_SECURE:	True
+WARN_SUBMIT_INSECURE:	True
+ADD_URLS:
+BOOKMARK_MENU:
+PRINT_COMMAND:		lpr
+PRINT_REVERSED:		False
+PRINT_COLOR:		True
+PRINT_LANDSCAPE:	False
+PRINT_PAPER:		0

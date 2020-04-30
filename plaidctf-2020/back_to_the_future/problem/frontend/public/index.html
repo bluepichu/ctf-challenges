@@ -1,0 +1,195 @@
+<html>
+	<style>
+@font-face {
+	font-family: "Times Pixel";
+	src: url("/times-new-roman-pixel.ttf");
+}
+
+* {
+	font-family: "Times Pixel", serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+body {
+	background: #cccccc;
+}
+
+input[type=text] {
+	background: #ffffff;
+	border-top: 2px solid #dddddd;
+	border-left: 2px solid #dddddd;
+	border-bottom: 2px solid #6c6c6c;
+	border-right: 2px solid #6c6c6c;
+	width: 300px;
+	padding: 8px;
+	text-shadow: 1px 0px 0px currentColor;
+	outline: none;
+}
+
+.emphasis {
+	display: inline-block;
+	padding: 3px;
+	border-top: 2px solid #6c6c6c;
+	border-left: 2px solid #6c6c6c;
+	border-bottom: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+}
+
+button {
+	background: #cccccc;
+	border-top: 2px solid #dddddd;
+	border-left: 2px solid #dddddd;
+	border-bottom: 2px solid #6c6c6c;
+	border-right: 2px solid #6c6c6c;
+	outline: none;
+	font-weight: bold;
+	padding: 2px 6px;
+}
+
+button:active {
+	border-top: 2px solid #6c6c6c;
+	border-left: 2px solid #6c6c6c;
+	border-bottom: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+}
+
+.progress {
+	width: 200px;
+	height: 6px;
+	border-top: 2px solid #6c6c6c;
+	border-left: 2px solid #6c6c6c;
+	border-bottom: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+	margin-right: 6px;
+}
+
+.progress-filled {
+	height: 6px;
+	background: #40aca8;
+	width: 0%;
+}
+
+.status-row {
+	display: flex;
+	align-items: center;
+	height: 20px;
+}
+	</style>
+
+	<body>
+		<h1>Back to the Future</h1>
+		<hr />
+		Enter a URL: <input type="text" />
+		<br />
+		<br />
+		<div class="emphasis">
+			<button id="submit">Send to the past!</button>
+		</div>
+		<br />
+		<br />
+		<div class="status-row">
+			<div class="progress">
+				<div class="progress-filled"></div>
+			</div>
+			<div id="status"></div>
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+	<script>
+let status = null;
+let statusCounter = 0;
+
+function updateStatus() {
+	if (status === null) {
+		document.querySelector("#status").textContent = "";
+	} else if (status.endsWith(".")) {
+		document.querySelector("#status").textContent = status;
+	} else {
+		document.querySelector("#status").textContent = status + ".".repeat(statusCounter % 3 + 1);
+	}
+}
+
+setInterval(() => {
+	statusCounter++;
+	updateStatus();
+}, 1000);
+
+
+document.querySelector("#submit").addEventListener("click", async () => {
+	let url = document.querySelector("input[type=text]").value;
+
+	// Note: the server makes an identical validity check.
+	let urlOk = false;
+	try {
+		if (url.length < 100 && new URL(url).toString() === url) {
+			urlOk = true;
+		}
+	} finally {
+		if (!urlOk) {
+			status = "Invalid URL.";
+			return;
+		}
+	}
+
+	document.querySelector("#submit").disabled = true;
+	document.querySelector("input[type=text]").disabled = true;
+	document.querySelector(".progress-filled").style.width = "0%";
+	status = "Charging flux capacitor";
+	updateStatus();
+
+	let challenge = await fetch("/challenge").then((r) => r.json());
+	let counter = 0;
+
+	while (true) {
+		if (counter % 1000 === 0) console.log(counter);
+		let digest = sha256.update(challenge.prefix + counter).array();
+		let value = (digest[0] << 24) | (digest[1] << 16) | (digest[2] << 8) | (digest[3] << 0);
+		value >>>= 32 - challenge.difficulty;
+
+		if (value === 0) {
+			break;
+		}
+
+		counter++;
+	}
+
+	let { uid, count } = await fetch(
+		"/challenge",
+		{
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				uid: challenge.uid,
+				response: counter.toString(),
+				url
+			})
+		}
+	).then((r) => r.json());
+
+	let checkInterval = setInterval(async () => {
+		let { position, completed } = await fetch("/position?uid=" + uid).then((r) => r.json());
+
+		if (completed) {
+			status = "Time travel complete.";
+			updateStatus();
+			clearInterval(checkInterval);
+			document.querySelector("#submit").disabled = false;
+			document.querySelector("input[type=text]").disabled = false;
+			return;
+		}
+
+		let ratio = (count - position) / count;
+		document.querySelector(".progress-filled").style.width = (100 * ratio) + "%";
+		status = `Gathering bandwidth (${(ratio * 88).toFixed(1)} kbps)`
+		updateStatus();
+	}, 2000);
+});
+	</script>
+</html>

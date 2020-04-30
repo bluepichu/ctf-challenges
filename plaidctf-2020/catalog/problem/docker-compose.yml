@@ -1,0 +1,45 @@
+version: "3.7"
+services:
+    php:
+        build:
+            context: ./php
+        image: catalog_php:latest
+        ports:
+            - 80:80
+        environment:
+            MYSQL_HOST: "mysql"
+            MYSQL_DATABASE: "comic_catalog"
+            MYSQL_USER: "mysql"
+            MYSQL_PASSWORD: "some_mysql_password_here"
+            RECAPTCHA_SECRET: "recaptcha_secret_goes_here"
+        volumes:
+            - "/root/problem/php/src:/var/www/html"
+        restart: always
+    mysql:
+        build:
+            context: ./mysql
+        image: catalog_mysql:latest
+        environment:
+            MYSQL_DATABASE: "comic_catalog"
+            MYSQL_USER: "mysql"
+            MYSQL_PASSWORD: "some_mysql_password_here"
+            MYSQL_ROOT_PASSWORD: "some_mysql_root_password_here"
+        restart: always
+        command: --default-authentication-plugin=mysql_native_password
+        volumes:
+            - "/root/mysql-data:/var/lib/mysql"
+    bot:
+        deploy:
+            replicas: 3
+        build:
+            context: ./bot
+        image: catalog_bot:latest
+        environment:
+            BASE_URL: "http://catalog.pwni.ng"
+            MYSQL_HOST: "mysql"
+            MYSQL_DATABASE: "comic_catalog"
+            MYSQL_USER: "mysql"
+            MYSQL_PASSWORD: "some_mysql_password_here"
+        restart: always
+        cap_add:
+            - SYS_ADMIN

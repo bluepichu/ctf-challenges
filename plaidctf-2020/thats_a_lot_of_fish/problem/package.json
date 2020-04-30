@@ -1,0 +1,10 @@
+{
+  "name": "talof",
+  "dependencies": {
+    "seedrandom": "^3.0.5",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/seedrandom": "^2.4.28"
+  }
+}

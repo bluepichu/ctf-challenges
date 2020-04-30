@@ -1,0 +1,12 @@
+{
+	"name": "solution",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"beautiful-log": "^2.0.0-6",
+		"express": "^4.17.1"
+	}
+}
