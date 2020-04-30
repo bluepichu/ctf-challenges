@@ -73,11 +73,11 @@
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>[That's a Lot of Fish](./plaidctf-2020/thats_a_lot_of_fish)</td>
+		<td><a href="./plaidctf-2020/thats_a_lot_of_fish">That's a Lot of Fish</a></td>
 		<td>Reversing</td>
 	</tr>
 	<tr>
-		<td>[Back to the Future](./plaidctf-2020/back_to_the_future)</td>
+		<td><a href="./plaidctf-2020/back_to_the_future">Back to the Future</a></td>
 		<td>Pwn</td>
 	</tr>
 </table>
