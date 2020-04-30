@@ -69,7 +69,7 @@
 	</tr>
 	<tr>
 		<td rowspan="3">Plaid CTF 2020</td>
-		<td>[Catalog](./plaidctf-2020/catalog)</td>
+		<td><a href="./plaidctf-2020/catalog">Catalog</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
