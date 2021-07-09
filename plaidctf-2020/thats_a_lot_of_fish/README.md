@@ -1,22 +1,12 @@
 # That's a Lot of Fish
 
-## Story
+Author: bluepichu
+Category: reversing
+Score: 400 points
 
-The hot sun relentlessly beats down on you as you stagger across the scorching sands of the desert. You've been walking for hours and the endless flat landscape hasn't helped the dizzying feeling you've felt from dehydration, but you had to keep moving.
+## Description
 
-After escaping the sand prison, you opened up the map on your HUD to see where you were. Except there was no map. You were facing a blank screen. For some reason, even escaping the sand prison hasn’t helped with your HUD at all.
-
-"This is fine. Everything is fine. I'm just gonna teleport back home then."
-
-The dehydration is getting to you, and you’re talking to yourself. It’s a little hard with your tongue so swollen. You go back a few menus on the HUD to teleport to home. But nothing happens when you press the button. Starting to panic, you try to exit REFUGE, but that button doesn't work either. Frustrated, you try hitting all of the buttons a few more times, but don't get any feedback. So you pick a direction and start walking.
-
-And then you find out the hard way what happens when you try to teleport about 25 times during a lag spike. You see flashes of a whole bunch of different locations—your home, the carnival, the stegosaurus fountain at the entrance of the plaza, your house _outside_ REFUGE, the HQB library—before your brain finally shuts off completely from sensory overload and you black out.
-
-You hear a siren. Groggily, you lift your head, and find yourself in the middle of a towering city; but it doesn't look like one you've ever seen. It's not nearly nice enough to be one in REFUGE, not nearly dingy enough to be in the real world. Something feels very, very off here. Oh, and your HUD is gone, so that's cool.
-
-After a few moments, you hear a loud BANG! from a few streets over. A military convoy of some sort suddenly appears from one of the nearby cross streets. With no other ideas for how to proceed, you choose to follow.
-
-What you see there is... confusing. There's something that looks like Godzilla attacking a skyscraper, but it seems to be made completely of metal. Mechagodzilla? And the military force you followed here doesn't seem to have a whole lot of weapons. Instead, from the vehicles, you see them unload tons upon tons of fresh fish, amassing them into one giant heap in the middle of the road. Are they trying to distract a mechanical monster with food? That doesn't sound like a great plan to you.
+What you see is... confusing. There's something that looks like Godzilla attacking a skyscraper, but it seems to be made completely of metal. Mechagodzilla? And the military force you followed here doesn't seem to have a whole lot of weapons. Instead, from the vehicles, you see them unload tons upon tons of fresh fish, amassing them into one giant heap in the middle of the road. Are they trying to distract a mechanical monster with food? That doesn't sound like a great plan to you.
 
 An onlooker beside you that you hadn't noticed up to this point suddenly pipes up. ["That's a lot of fish,"](https://www.youtube.com/watch?v=WZLg1ARnaxE) he states flatly.
 
@@ -24,12 +14,30 @@ He's not _wrong_, you suppose.
 
 As you watch on, for just a moment, you see a corner of a flag sticking out of the pile of fish, before being covered up by some cod and salmon that are added to the top of the pile. Well, it's not like you have a better option, right? You run up to the smelly pile and plunge in your hands, desperately hoping to locate that flag you just saw.
 
-## Problem Details
+(Part of [a larger story](https://docs.google.com/document/d/15NtrJPTbBXqXce_T1z-7nHMPR2eE109fycaviSTnq30).)
+
+---
 
 Here's the pile of fish.  (Link to handout.)
 
+## Design
+
+Inspired by [this issue on the TypeScript Github](https://github.com/microsoft/TypeScript/issues/14833), I set out to exploit the fact that TypeScript's type system is turing complete to write a little VM for players to reverse.
+
+The design of the problem is, for the most part, pretty straightforward, as I essentially started with the most basic units of computation and work my way all the way up to entire operations.  For example, to get to an addition operation, I started with basic definitions for `Bit`, then built that up into `Num`, then used those alongside a bit addition lookup table to build the individual recursive cases for addition, and finally put it all together to add together two `Num`s.  By simply building up in this fashion it's not too hard to work out implementations for all of the basic arithmetic and bitwise operations, though the patterns you need to use to make TS not try to infinitely unroll your types take some getting used to.  (Fortunately, that original Github thread provides a lot of help in that regard!)
+
+With those in place, it also wasn't too hard to put together a very simple machine; all you need is some kind of addressing system, and then you can break down operations into a series of reads, writes, and arithmetic operations, the latter of which I already had.
+
+At this point I had a basic machine working, but I wanted to do something extra interseting to exploit the fact that we have easy access to nice structures within the type system.  I ultimately settled on implementing a heap as a memory primitive, since it's not too terrible to write (and, just as importantly, reverse) a functional-style leftist heap.
+
+With all of this put together, it became a matter of determining how to encode a flag.  I thought for a long time about what a reasonable way to do this would be, and ultimately settled on having the VM verify a solution to a small hardcoded instance of TSP.  This seemed to me like a good program for it to run as it would utilize the heap primitive well and would be brute forceable once the competitor understood what the VM is doing.  Once I had a solution with a unique correct solution generated, all that was left was to ensure that the flag couldn't be brute forced, which was easily accomplished by adding in a large amount of hashing to the final flag computation.
+
 ## Solution
 
-I never had to reverse this, so anything I might say about how to go about reversing anything here would be pretty meaningless!  [hgarrereyn's writeup](https://ctf.harrisongreen.me/2020/plaidctf/thats_a_lot_of_fish/) and [cts's writeup](https://blog.perfect.blue/Lot-of-Fish-PlaidCTF-2020) are both excellent, and I definitely recommend checking them out.  Bonus points to hgarrereyn for writing [a Binary Ninja disassembler](https://github.com/hgarrereyn/bn-fish-disassembler) for my silly VM.
-
 You can see the unmangled source (with some comments) in `problem/index.ts`, the mangler in `problem/mangle.ts`, the program that the VM is running in `problem/tsp.fish`, and an assembler in `problem/assemble.ts`.
+
+I've included a Dockerfile with all of the types cut out that executes on the correct input to produce the flag in the `solution` directory.
+
+## Deployment
+
+This problem has no server.  Simply provide the contents of the `handout` directory to competitors.
