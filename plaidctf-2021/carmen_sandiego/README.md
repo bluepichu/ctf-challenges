@@ -2,6 +2,8 @@
 
 _Special thanks to Luke and f0xtr0t for testing this problem._
 
+![The Carmen Sandiego problem poster.](./poster.png)
+
 ## Problem Description
 
 Carmen isn't your average thief – in fact, she's trying to save the artifacts she steals! Join Carmen, Player, Zach, and Ivy as they protect the world's cultural history from the likes of VILE, one theft at a time. But they have to be careful: ACME thinks they're on the wrong side of the law and will stop at nothing to bring them to justice.
@@ -16,9 +18,14 @@ The entire `problem` directory, which includes the runner infrastructure in addi
 
 ## Issues and Season 2
 
-The original version of this problem had a major bug that allowed for a much easier solution than intended, specifically by allowing attackers to submit a `javascript:` URL and have that execute on-site.  This problem was re-released as "Carmen Sandiego: Season 2" with this bug patched out.
+The original version of this problem had a major bug that allowed for a much easier solution than intended, specifically by allowing attackers to submit a `javascript:` URL and have that execute on-site.  This problem was re-released as _Carmen Sandiego: Season 2_ with the unintended solution patched out and somewhat reduced scores (300 + 150).
 
 This repository contains the Season 2 version.  See `season2.diff` for the relevant diff between the two versions.
 
 ## Solution
 
+TODO: a real writeup :)
+
+You can see my solution scripts in the `solution` directory.
+
+![A short writeup to the problem.](./images/short-writeup.png)
