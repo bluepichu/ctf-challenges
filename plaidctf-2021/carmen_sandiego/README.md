@@ -2,7 +2,7 @@
 
 _Special thanks to Luke and f0xtr0t for testing this problem._
 
-![The Carmen Sandiego problem poster.](./poster.png)
+![The Carmen Sandiego problem poster.](./images/poster.png)
 
 ## Problem Description
 
