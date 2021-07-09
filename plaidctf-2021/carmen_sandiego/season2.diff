@@ -1,0 +1,28 @@
+diff --git a/carmen-sandiego/problem/instance/victim/src/index.ts b/carmen-sandiego-season-2/problem/instance/victim/src/index.ts
+index ae91eac..4d789ff 100644
+--- a/carmen-sandiego/problem/instance/victim/src/index.ts
++++ b/carmen-sandiego-season-2/problem/instance/victim/src/index.ts
+@@ -6,7 +6,7 @@ const adminPassword = process.env.ADMIN_PASSWORD!;
+
+ async function run() {
+        const browser = await puppeteer.launch();
+-       const page = await browser.newPage();
++       let page = await browser.newPage();
+
+        // Log in to the target site
+        await page.goto(`http://${targetHost}/`);
+@@ -16,9 +16,13 @@ async function run() {
+                page.click("[type=submit]"),
+                page.waitForNavigation({ waitUntil: "networkidle2" })
+        ]);
++       await page.close();
+
++       page = await browser.newPage();
+        // Go to the attacker's URL
+-       await page.goto(attackerUrl);
++       if (attackerUrl.startsWith("http://") || attackerUrl.startsWith("https://")) {
++               await page.goto(attackerUrl);
++       }
+
+        // Wait until we're killed by the runner...
+ }

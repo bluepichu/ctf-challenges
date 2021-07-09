@@ -80,4 +80,9 @@
 		<td><a href="./plaidctf-2020/back_to_the_future">Back to the Future</a></td>
 		<td>Pwn</td>
 	</tr>
+	<tr>
+		<td>Plaid CTF 2021</td>
+		<td><a href="./plaidctf-2021/carmen_sandiego">Carmen Sandiego</a></td>
+		<td>Web</td>
+	</tr>
 </table>
