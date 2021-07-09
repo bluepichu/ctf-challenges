@@ -1,22 +1,18 @@
-# That's a Lot of Fish
+# That's a Lot of Fish&emsp;<sub><sup>Reversing, 400 points</sup></sub>
 
-Author: bluepichu
-Category: reversing
-Score: 400 points
+## Story
 
-## Description
+> What you see is... confusing. There's something that looks like Godzilla attacking a skyscraper, but it seems to be made completely of metal. Mechagodzilla? And the military force you followed here doesn't seem to have a whole lot of weapons. Instead, from the vehicles, you see them unload tons upon tons of fresh fish, amassing them into one giant heap in the middle of the road. Are they trying to distract a mechanical monster with food? That doesn't sound like a great plan to you.
+>
+> An onlooker beside you that you hadn't noticed up to this point suddenly pipes up. ["That's a lot of fish,"](https://www.youtube.com/watch?v=WZLg1ARnaxE) he states flatly.
+>
+> He's not _wrong_, you suppose.
+>
+> As you watch on, for just a moment, you see a corner of a flag sticking out of the pile of fish, before being covered up by some cod and salmon that are added to the top of the pile. Well, it's not like you have a better option, right? You run up to the smelly pile and plunge in your hands, desperately hoping to locate that flag you just saw.
 
-What you see is... confusing. There's something that looks like Godzilla attacking a skyscraper, but it seems to be made completely of metal. Mechagodzilla? And the military force you followed here doesn't seem to have a whole lot of weapons. Instead, from the vehicles, you see them unload tons upon tons of fresh fish, amassing them into one giant heap in the middle of the road. Are they trying to distract a mechanical monster with food? That doesn't sound like a great plan to you.
+<sub>(Part of [a larger story](https://docs.google.com/document/d/15NtrJPTbBXqXce_T1z-7nHMPR2eE109fycaviSTnq30).)</sub>
 
-An onlooker beside you that you hadn't noticed up to this point suddenly pipes up. ["That's a lot of fish,"](https://www.youtube.com/watch?v=WZLg1ARnaxE) he states flatly.
-
-He's not _wrong_, you suppose.
-
-As you watch on, for just a moment, you see a corner of a flag sticking out of the pile of fish, before being covered up by some cod and salmon that are added to the top of the pile. Well, it's not like you have a better option, right? You run up to the smelly pile and plunge in your hands, desperately hoping to locate that flag you just saw.
-
-(Part of [a larger story](https://docs.google.com/document/d/15NtrJPTbBXqXce_T1z-7nHMPR2eE109fycaviSTnq30).)
-
----
+## Problem Description
 
 Here's the pile of fish.  (Link to handout.)
 
@@ -35,6 +31,8 @@ With all of this put together, it became a matter of determining how to encode a
 ## Solution
 
 You can see the unmangled source (with some comments) in `problem/index.ts`, the mangler in `problem/mangle.ts`, the program that the VM is running in `problem/tsp.fish`, and an assembler in `problem/assemble.ts`.
+
+I never had to reverse this, so anything I might say about how to go about reversing anything here would be pretty meaningless! [hgarrereyn's writeup](https://ctf.harrisongreen.me/2020/plaidctf/thats_a_lot_of_fish/) and [cts's writeup](https://blog.perfect.blue/Lot-of-Fish-PlaidCTF-2020) are both excellent, and I definitely recommend checking them out. Bonus points to hgarrereyn for writing [a Binary Ninja disassembler](https://github.com/hgarrereyn/bn-fish-disassembler) for my silly VM.
 
 I've included a Dockerfile with all of the types cut out that executes on the correct input to produce the flag in the `solution` directory.
 

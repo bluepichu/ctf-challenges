@@ -1,20 +1,16 @@
-# Back to the Future
+# Back to the Future&emsp;<sub><sup>Pwn, 400 points</sup></sub>
 
-Author: bluepichu
-Category: pwn
-Score: 400 points
+## Story
 
-## Description
+> After picking up the fallen modem, you turn back to the stack of hardware to return it when something strange about the modem itself catches the corner of your eye. It looks like the bottom of the modem has some nonstandard hardware for networking in the 1990's. There are three (are those fuses?) arranged in a triangular pattern, radiating from a node in the center of the modem, before each connecting to some components back inside the plastic shell near the edges. You can't imagine what the function of those could possibly be, but your interest is piqued. Getting a weird sense of deja vu, you decide to investigate further.
+>
+> You suddenly realize why the arrangement of fuses on the bottom of the modem feels familiar; they aren't fuses at all, they're a Flux Capacitor like the one from Back to the Future! So if it's attached to a modem, then... it's sending data through time? But surely this hardware couldn't actually send packets to the past, right?!
+>
+> It’s the one last hope that you’ve been looking for. Maybe you can get a message into the past to warn everyone about the situation. You don’t know how to really control this thing, so you’ll just have to do your best. Even the things you love most don’t last; your best is really all you can do.
 
-After picking up the fallen modem, you turn back to the stack of hardware to return it when something strange about the modem itself catches the corner of your eye. It looks like the bottom of the modem has some nonstandard hardware for networking in the 1990's. There are three (are those fuses?) arranged in a triangular pattern, radiating from a node in the center of the modem, before each connecting to some components back inside the plastic shell near the edges. You can't imagine what the function of those could possibly be, but your interest is piqued. Getting a weird sense of deja vu, you decide to investigate further.
+<sub>(Part of [a larger story](https://docs.google.com/document/d/15NtrJPTbBXqXce_T1z-7nHMPR2eE109fycaviSTnq30).)</sub>
 
-You suddenly realize why the arrangement of fuses on the bottom of the modem feels familiar; they aren't fuses at all, they're a Flux Capacitor like the one from Back to the Future! So if it's attached to a modem, then... it's sending data through time? But surely this hardware couldn't actually send packets to the past, right?!
-
-It’s the one last hope that you’ve been looking for. Maybe you can get a message into the past to warn everyone about the situation. You don’t know how to really control this thing, so you’ll just have to do your best. Even the things you love most don’t last; your best is really all you can do.
-
-(Part of [a larger story](https://docs.google.com/document/d/15NtrJPTbBXqXce_T1z-7nHMPR2eE109fycaviSTnq30).)
-
----
+## Problem Description
 
 Access your modem here.  (Links to handout and submission site.)
 
