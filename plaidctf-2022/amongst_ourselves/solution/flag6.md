@@ -1,3 +1,5 @@
+_Note: this writeup is for an earlier version of Hoaxer, in which it was a single problem that required both the Incite Conspiracy and Contact Satellite exploits.  The goal was to get to the conspiracy board, but this was made more difficult by the fact that the Dropship map was much lower (relative to The Shelld) than in the final problem, so the kill clip exploit used for the final version of Incite Conspiracy couldn't be set up without first getting out of bounds in the Dropship._
+
 ## Insights
 
 Here are the key insights needed to solve the problem, roughly in the order that they are required:

@@ -1,1 +1,1 @@
-Send the server the following input: `ABCDEFGHIJKLMNOPQRSTUVWZTUUUU`.  It'll crash the process (resulting in a hang that requires the player to exit the Purchase Snack task to continue playing), but the vending machine's display will show the flag.
+Send the server the following input: `"A".repeat(0x17) + "\xbd\x14\x40"`.  It'll crash the process (resulting in a hang that requires the player to exit the Purchase Snack task to continue playing), but the vending machine's display will show the flag.
