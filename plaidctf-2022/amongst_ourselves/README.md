@@ -4,6 +4,8 @@ _Special thanks to strikeskids for testing this problem._
 
 Note that this problem was split into two different problem listings in the problem dashboard, "Shipmate" and "Hoaxer".
 
+This challenge can be played at [its new long-term home](http://amongst.pichu.blue/).
+
 ## Problem Description
 
 ### Amongst Ourselves: Shipmate
