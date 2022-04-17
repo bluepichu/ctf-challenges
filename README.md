@@ -85,4 +85,9 @@
 		<td><a href="./plaidctf-2021/carmen_sandiego">Carmen Sandiego</a></td>
 		<td>Web</td>
 	</tr>
+	<tr>
+		<td>Plaid CTF 2022</td>
+		<td><a href="./plaidctf-2022/amongst_ourselves">Amongst Ourselves</a></td>
+		<td>Pwn/Rev/Crypto/Web/Misc</td>
+	</tr>
 </table>

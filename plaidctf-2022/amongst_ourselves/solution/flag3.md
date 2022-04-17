@@ -1,0 +1,1 @@
+First, determine the correct user id by checking against the source code; for example, `1` for `zuck`, `2` for `randall`, etc.  Input `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'` for the username and `union select X, flag from flag--` for the password, replacing `X` in the password with your user id.  After submitting, the success message will contain the flag instead of the username.
