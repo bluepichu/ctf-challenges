@@ -1,6 +1,6 @@
 # Amongst Ourselves&emsp;<sub><sup>Pwn/Rev/Crypto/Web/Misc, 950 points total</sup></sub>
 
-_Special thanks to strikeskids for testing this problem._
+_Special thanks to strikeskids for testing this problem and to zaratec for providing some of the assets._
 
 Note that this problem was split into two different problem listings in the problem dashboard, "Shipmate" and "Hoaxer".
 
