@@ -39,5 +39,3 @@ So, putting all of this together, an attacker needs to do the following:
 If done correctly, after step 5, the hoaxer will clip through the wall.  At this point they can walk into the hidden room and interact with the conspiracy board to get the flag.
 
 Note that steps 1, 3, and 5 all can't be done using the default client.  An attacker must either modify the client (this is what I did) or set up a websocket server to sit in front of the game server to send requests on their behalf.
-
-My setup is available on the `bp-amongst-ourselves-debug` branch, though it isn't a plug-and-play solution; you have to manually operate it in order to get a flag.
