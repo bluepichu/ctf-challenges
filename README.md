@@ -25,15 +25,15 @@
 	</tr>
 	<tr>
 		<td rowspan="3">Plaid CTF 2017</td>
-		<td>Toaster Wars 2.5 (Light Flag)</td>
+		<td><a href="./plaidctf-2017/toaster-wars">Toaster Wars 2.5 (Light Flag)</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>Toaster Wars 2.5 (Blazing Flag)</td>
+		<td><a href="./plaidctf-2017/toaster-wars">Toaster Wars 2.5 (Blazing Flag)</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>Toaster Wars 2.5 (Stormy Flag)</td>
+		<td><a href="./plaidctf-2017/toaster-wars">Toaster Wars 2.5 (Stormy Flag)</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
