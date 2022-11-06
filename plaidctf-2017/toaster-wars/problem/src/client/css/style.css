@@ -1,0 +1,155 @@
+*, *:before, *:after {
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
+body {
+	background: #383838;
+	color: #F5F5F5;
+	font-family: "Lato";
+}
+
+h1 {
+	font-size: 4em;
+	margin: 0px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	color: #03A9F4;
+	text-align: center;
+	margin: -.4em 0px 0px;
+	padding-right: 2em;
+}
+
+header {
+	margin-bottom: 1.6em;
+}
+
+main {
+	max-width: 80ch;
+	margin: 0px auto;
+}
+
+.announcement {
+	color: #F1453D;
+	background: #F7BBBB;
+	padding: 1em;
+	margin: 1em 0px;
+}
+
+section {
+	background: #232323;
+	padding: .6em;
+	margin: 1em 0px;
+}
+
+h3 {
+	margin: 0px 0px .4em;
+	color: #FDD835;
+	font-size: 1.6em;
+}
+
+.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.form h4 {
+	text-align: center;
+	margin: .8em 0px .4em;
+}
+
+.form {
+	flex-basis: 0px;
+	flex-grow: 1;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 6em;
+	justify-content: space-around;
+}
+
+input {
+	background: none;
+	border: 0px;
+	border-bottom: 1px solid #777777;
+	width: 20ch;
+	outline: 0px;
+	font-size: 1em;
+	color: #F5F5F5;
+}
+
+button {
+	background: #50AE55;
+	color: #F5F5F5;
+	font-size: 1em;
+	padding: .4em;
+	border: 0px;
+	outline: 0px;
+	cursor: pointer;
+}
+
+.dungeon-listing {
+	position: relative;
+	margin: 1em auto;
+	max-width: 80%;
+}
+
+.dungeon-listing img {
+	width: 100%;
+}
+
+.dungeon-listing h4 {
+	position: absolute;
+	right: 0px;
+	top: .6em;
+	padding: .4em 1em;
+	background: #03A9F4;
+	color: #F5F5F5;
+	font-size: 1.4em;
+	margin: 0px;
+}
+
+.dungeon-listing h5 {
+	position: absolute;
+	right: 0px;
+	top: 3.4em;
+	padding: .4em .8em;
+	background: #F1453D;
+	color: #F5F5F5;
+	font-size: 1.2em;
+	margin: 0px;
+}
+
+.dungeon-listing h6 {
+	position: absolute;
+	right: 0px;
+	bottom: .6em;
+	padding: .4em .8em;
+	background: #FDD835;
+	color: #232323;
+	font-size: 1em;
+	margin: 0px;
+}
+
+.user {
+	color: #F1453D;
+}
+
+.dungeon {
+	color: #03A9F4;
+}
+
+.feed-item {
+	padding: .4em .6em;
+	background: #383838;
+}
+
+.feed-item:nth-child(2n) {
+	background: #4d4d4d;
+}

@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  tw:
+    restart: always
+    build:
+      context: .
+    image: tw:latest
+    ports:
+      - "6918:6918"
+      - "3000:3000"
+    command: [node, index.js, --redis-host, "redis", --redis-port, "6379"]
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"

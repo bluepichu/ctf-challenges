@@ -1,0 +1,8 @@
+{
+	"frames": {
+		"bg-ocean": { "frame": {"x": 0, "y": 0, "w": 480, "h": 336}, "sourceSize": {"x": 0, "y": 0, "w": 480, "h": 336} }
+	},
+	"meta": {
+		"image": "ocean.png"
+	}
+}

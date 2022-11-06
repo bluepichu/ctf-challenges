@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"removeComments": true,
+		"sourceMap": true,
+		"noImplicitAny": true
+	},
+	"exclude": [
+		"node_modules",
+		"build",
+		"bower_components"
+	],
+	"compileOnSave": false,
+	"baseUrl": "."
+}

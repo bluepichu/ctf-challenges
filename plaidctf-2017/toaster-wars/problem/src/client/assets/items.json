@@ -1,0 +1,99 @@
+{
+	"frames": {
+		"item-screwdriver": {
+			"frame": {"x":0, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-battery": {
+			"frame": {"x":16, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-flag": {
+			"frame": {"x":32, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-box": {
+			"frame": {"x":48, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-key": {
+			"frame": {"x":64, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":64, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-paprika": {
+			"frame": {"x":0, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-cayenne": {
+			"frame": {"x":16, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":16, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-peppercorn": {
+			"frame": {"x":32, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":16, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-turmeric": {
+			"frame": {"x":48, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":16, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-cinnamon": {
+			"frame": {"x":64, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":64, "y":16, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-oregano": {
+			"frame": {"x":80, "y":16, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":80, "y":16, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-salt": {
+			"frame": {"x":80, "y":0, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":80, "y":0, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		},
+		"item-spare-parts": {
+			"frame": {"x":0, "y":32, "w":16, "h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":32, "w":16, "h":16},
+			"sourceSize": {"w": 16, "h": 16}
+		}
+	},
+
+	"meta": {
+		"image": "items.png"
+	}
+}

@@ -1,0 +1,20 @@
+# Installable resources
+node_modules
+
+# Built resources
+build
+
+# OSX
+.DS_Store
+
+# Sublime
+*.sublime-workspace
+
+# Redis
+dump.rdb
+
+# Artillery
+artillery_report_*
+
+*.swo
+*.swp

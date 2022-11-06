@@ -1,0 +1,33 @@
+{
+	"frames": {
+		"golden-spatula-base-6": { "frame": {"x": 0, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-7": { "frame": {"x": 24, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-0": { "frame": {"x": 48, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-1": { "frame": {"x": 72, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-2": { "frame": {"x": 96, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-3": { "frame": {"x": 120, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-4": { "frame": {"x": 144, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-base-5": { "frame": {"x": 168, "y": 0, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+
+		"golden-spatula-hurt-6": { "frame": {"x": 0, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-7": { "frame": {"x": 24, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-0": { "frame": {"x": 48, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-1": { "frame": {"x": 72, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-2": { "frame": {"x": 96, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-3": { "frame": {"x": 120, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-4": { "frame": {"x": 144, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hurt-5": { "frame": {"x": 168, "y": 24, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+
+		"golden-spatula-hit-a": { "frame": {"x": 0, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-hit-b": { "frame": {"x": 24, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"exclaim-a": { "frame": {"x": 48, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"exclaim-b": { "frame": {"x": 72, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"exclaim-c": { "frame": {"x": 96, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"exclaim-d": { "frame": {"x": 120, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} },
+		"golden-spatula-shadow": { "frame": {"x": 144, "y": 48, "w": 24, "h": 24}, "sourceSize": {"w": 24, "h": 24} }
+	},
+
+	"meta": {
+		"image": "golden-spatula.png"
+	}
+}

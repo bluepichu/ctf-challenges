@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>Toaster Wars 2KLutS</title>
+
+		<script src="/socket.io/socket.io.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+
+		<script>
+		function login() {
+			localStorage.setItem("user", document.getElementById("user").value);
+			localStorage.setItem("pass", document.getElementById("pass").value);
+			go();
+			return false;
+		}
+
+		function guest() {
+			go();
+			return false;
+		}
+
+		function go() {
+			window.location = "/game";
+		}
+
+		let socket = io();
+		let feedElt = document.getElementById("feed");
+
+		socket.on("feed", (data) => {
+			let msg = "";
+
+			switch (data.type) {
+				case "connect":
+					msg = `<span class="user">Guest_${data.user.substring(0, 8)}</span> connected.`;
+					break;
+
+				case "login":
+					msg = `<span class="user">${data.user}</span> logged in.  Thanks for playing the alpha!`;
+					break;
+
+				case "start":
+					msg = `<span class="user">${data.user}</span> started exploring <span class="dungeon">${data.dungeon}</span>!`
+					break;
+
+				case "floor":
+					msg = `<span class="user">${data.user}</span> got to floor ${data.floor} of <span class="dungeon">${data.dungeon}!</span>`;
+					break;
+
+				case "defeat":
+					msg = `<span class="user">${data.user}</span> was defeated on floor ${data.floor} of <span class="dungeon">${data.dungeon}</span>.`;
+					break;
+
+				case "clear":
+					msg = `<span class="user">${data.user}</span> cleared <span class="dungeon>${data.dungeon}</span>!`;
+					break;
+			}
+
+			feed.innerHTML += `<div class="feed-item">${msg}</div>`;
+		});
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Toaster Wars: Going Rogue</h1>
+			<h2>Episode 2.5: 20000 Leagues under the Sink</h2>
+		</header>
+		<main>
+			<div class="announcement"><b>Our game is now in open beta!</b>  Thank you very much to the testers in the closed alpha who made this possible.  We made a dungeon specially for you with its very own collectible flag.  Thanks for playing!</div>
+
+			<section>
+				<h3>Play the Game</h3>
+				<div class="split">
+					<div class="form">
+						<h4>Have an account?</h4>
+						<form onsubmit="return login()">
+							<input type="text" name="username" placeholder="Username" id="user" />
+							<input type="password" name="password" placeholder="Password" id="pass" />
+							<button>Login</button>
+						</form>
+					</div>
+					<div class="form">
+						<h4>Don't have an account?</h4>
+						<form onsubmit="return guest()">
+							<button>Continue as Guest</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>Dungeons</h3>
+
+				<div class="dungeon-listing">
+					<h4>Shallow Sand Bar</h4>
+					<h5>Alpha Tester Exclusive!</h5>
+					<h6>Beat the dungeon to get the <b>Blazing Flag</b>!</h6>
+					<img src="assets/shallow-sandbar.png" />
+				</div>
+
+				<div class="dungeon-listing">
+					<h4>Treacherous Trench</h4>
+					<h6>Defeat the Golden Spatula and obtain the <b>Stormy Flag</b>!</h6>
+					<img src="assets/treacherous-trench.png" />
+				</div>
+
+				<div class="dungeon-listing">
+					<h4>Undersea Cavern</h4>
+					<h6>Can you break the lock?  Win the <b>Light Flag</b>!</h6>
+					<img src="assets/undersea-cavern.png" />
+				</div>
+
+				<div class="dungeon-listing">
+					<h4>Calm Crystal Reef</h4>
+					<h6>No flags here!</h6>
+					<img src="assets/crystal-reef.png" />
+				</div>
+			</section>
+			<section>
+				<h3>Recent Activity</h3>
+				<div id="feed"></div>
+			</section>
+		</main>
+	</body>
+</html>

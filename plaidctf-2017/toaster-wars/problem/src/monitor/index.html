@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<title>DungeonKit Monitor</title>
+
+		<style>
+		*, *::before, *::after {
+			box-sizing: inherit;
+			font-family: inherit;
+		}
+
+		html {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0px;
+			font-family: "Lato";
+		}
+
+		header {
+			background: #00897B;
+			color: #ffffff;
+			font-size: 2em;
+			padding: .4em 1.2em;
+			flex-grow: 0;
+			margin-bottom: .4em;
+		}
+
+		main {
+			flex-basis: 0;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#comm-container,
+		#logic-container,
+		#queues-container {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 1.6em 2.4em .2em;
+			margin-bottom: 1em;
+			min-height: 8.6em;
+		}
+
+		#comm-container {
+			background: #ffcdd2;
+		}
+
+		#logic-container {
+			background: #BBDEFB;
+		}
+
+		#queues-container {
+			background: #FFE0B2;
+		}
+
+		#comm-container::before,
+		#logic-container::before,
+		#queues-container::before {
+			font-size: .8em;
+			font-weight: 900;
+			text-transform: uppercase;
+			position: absolute;
+			left: 1.2em;
+			top: .6em;
+		}
+
+		#comm-container::before {
+			content: "Comm Nodes";
+			color: #e53935;
+		}
+
+		#logic-container::before {
+			content: "Logic Nodes";
+			color: #1E88E5;
+		}
+
+		#queues-container::before {
+			content: "Queues";
+			color: #FB8C00;
+		}
+
+		.node {
+			width: 8em;
+			height: 6em;
+			background: #ffffff;
+			margin: .4em;
+			padding: .8em;
+			border-left: 4px solid;
+		}
+
+		#comm-container .node {
+			border-left-color: #e53935;
+		}
+
+		#logic-container .node {
+			border-left-color: #1E88E5;
+		}
+
+		#queues-container .node {
+			border-left-color: #FB8C00;
+		}
+
+		.node h2 {
+			margin: 0px 0px .2em;
+			padding: 0;
+			font-size: 1.4em;
+			font-weight: 400;
+			color: #212121;
+		}
+
+		.comm-node .connections,
+		.logic-node .throughput,
+		.logic-node .games,
+		.queue .length {
+			color: #616161;
+			font-size: 1em;
+			margin-left: .4em;
+		}
+
+		.material-icons {
+			font-size: 1em !important;
+			vertical-align: -2px;
+			margin-right: .2em;
+		}
+
+		footer {
+			flex-grow: 0;
+		}
+		</style>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://localhost:6918/lib/webfontloader.js"></script>
+		<script src="/js/monitor.js"></script>
+	</head>
+	<body>
+		<header>DungeonKit Status Monitor</header>
+		<main>
+			<div id="comm-container"></div>
+			<div id="logic-container"></div>
+			<div id="queues-container"></div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

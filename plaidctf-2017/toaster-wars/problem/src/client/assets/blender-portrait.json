@@ -1,0 +1,8 @@
+{
+	"frames": {
+		"portrait-blender-neutral": { "frame": {"x": 0, "y": 0, "w": 40, "h": 40}, "sourceSize": {"x": 0, "y": 0, "w": 40, "h": 40} }
+	},
+	"meta": {
+		"image": "blender-portrait.png"
+	}
+}
