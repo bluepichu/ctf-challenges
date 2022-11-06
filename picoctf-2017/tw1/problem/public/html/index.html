@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<title>Toaster Wars: Going Rogue, Episode 1 - Appliance Rescue Team</title>
+
+		<link rel="stylesheet" href="/public/css/style.css" />
+
+		<script src="/public/lib/jquery.js"></script>
+		<script src="/public/lib/pixi.js"></script>
+		<script src="/public/lib/sprintf.js"></script>
+		<script src="/public/lib/cookie.js"></script>
+		<script src="/public/lib/deep-diff.js"></script>
+
+		<script src="/socket.io/socket.io.js"></script>
+
+		<script src="/public/js/animations.js"></script>
+		<script src="/public/js/client.js"></script>
+	</head>
+	<body>
+		<div id="floor-indicator" class="active no-shadow"><div class="dungeon">Creaky Kitchen Floor</div><div class="floor">1F</div></div>
+
+		<div class="column">
+			<div id="top-row" class="row">
+				<div id="game-container"></div>
+				<div class="column">
+					<div id="message-log"></div>
+					<table id="item-table">
+						<tr>
+							<th>Use</th>
+							<th>Drop</th>
+							<th>Item</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td><span class="key">A</span></td>
+							<td><span class="key">Z</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">S</span></td>
+							<td><span class="key">X</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">D</span></td>
+							<td><span class="key">C</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">F</span></td>
+							<td><span class="key">V</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">G</span></td>
+							<td><span class="key">B</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">H</span></td>
+							<td><span class="key">N</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">J</span></td>
+							<td><span class="key">M</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">K</span></td>
+							<td><span class="key">,</span></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tfoot>
+							<tr>
+								<td colspan="4" style="width: 100%"><span class="key">Q</span> to sort items</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+
+			<div id="bottom-row" class="row">
+				<div id="attacks-controls-column" class="column">
+					<table id="attacks-table">
+						<tr>
+							<th>Use</th>
+							<th>Name</th>
+							<th>Range</th>
+							<th>Power</th>
+							<th>Energy</th>
+							<th>Effects</th>
+						</tr>
+						<tr>
+							<td><span class="key">1</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">2</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">3</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span class="key">4</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+
+
+					<div id="basic-controls">
+						<div>
+							<span class="key">&uarr;</span> <span class="key">&darr;</span> <span class="key">&larr;</span> <span class="key">&rarr;</span> to move (diagonals included)
+						</div>
+						<div>
+							Hold <span class="key">R</span> to rotate without moving
+						</div>
+					</div>
+				</div>
+
+
+				<div id="stats-options-column" class="column">
+					<table id="stats-table">
+						<tr>
+							<th>HP</th>
+							<td></td>
+							<td class="soft"></td>
+							<td class="bar-container">
+								<div class="bar">
+									<div class="bar-filled"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>Energy</th>
+							<td></td>
+							<td class="soft"></td>
+							<td class="bar-container">
+								<div class="bar">
+									<div class="bar-filled"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>Attack</th>
+							<td></td>
+							<td class="soft"></td>
+							<td class="scale-container">
+								<div class="scale">
+									<div class="scale-filled"></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>Defense</th>
+							<td></td>
+							<td class="soft"></td>
+							<td class="scale-container">
+								<div class="scale">
+									<div class="scale-filled"></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<div id="options">
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="title">Toaster Wars: Going Rogue, Episode 1 &mdash; Appliance Rescue Team</div>
+				<div class="online">Players online: <span id="online-count">1</span></div>
+			</footer>
+		</div>
+	</body>
+</html>

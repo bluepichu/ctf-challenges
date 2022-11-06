@@ -1,0 +1,183 @@
+{
+	"frames": {
+		"hud-wall-1": {
+			"frame": {"x":16, "y":8, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":8, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-2": {
+			"frame": {"x":16, "y":0, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":0, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-3": {
+			"frame": {"x":8, "y":0, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":8, "y":0, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-4": {
+			"frame": {"x":0, "y":0, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":0, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-5": {
+			"frame": {"x":0, "y":8, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":8, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-6": {
+			"frame": {"x":0, "y":16, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":16, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-7": {
+			"frame": {"x":8, "y":16, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":8, "y":16, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-8": {
+			"frame": {"x":16, "y":16, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":16, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-9": {
+			"frame": {"x":0, "y":40, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":40, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-10": {
+			"frame": {"x":8, "y":40, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":8, "y":40, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-11": {
+			"frame": {"x":8, "y":24, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":8, "y":24, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-12": {
+			"frame": {"x":0, "y":24, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":24, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-13": {
+			"frame": {"x":24, "y":0, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":0, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-14": {
+			"frame": {"x":24, "y":8, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":8, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-15": {
+			"frame": {"x":24, "y":16, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":16, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-16": {
+			"frame": {"x":16, "y":24, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":24, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-17": {
+			"frame": {"x":24, "y":24, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":24, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-18": {
+			"frame": {"x":32, "y":24, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":24, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-19": {
+			"frame": {"x":32, "y":16, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":16, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-wall-20": {
+			"frame": {"x":16, "y":40, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":40, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-floor": {
+			"frame": {"x":16, "y":32, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":16, "y":6320, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-stairs": {
+			"frame": {"x":32, "y":32, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":32, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-player": {
+			"frame": {"x":32, "y":40, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":32, "y":40, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-enemy": {
+			"frame": {"x":24, "y":40, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":40, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		},
+		"hud-item": {
+			"frame": {"x":24, "y":32, "w":8, "h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":32, "w":8, "h":8},
+			"sourceSize": {"w": 8, "h": 8}
+		}
+	},
+
+	"meta": {
+		"image": "../images/hud.png"
+	}
+}

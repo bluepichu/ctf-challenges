@@ -1,0 +1,687 @@
+{
+	"frames": {
+		"toaster-walk-0-0": {
+			"frame": {"x":0, "y":0, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":0, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-1-0": {
+			"frame": {"x":0, "y":24, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":24, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-2-0": {
+			"frame": {"x":0, "y":48, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":48, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-3-0": {
+			"frame": {"x":0, "y":72, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":72, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-4-0": {
+			"frame": {"x":0, "y":96, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":96, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-5-0": {
+			"frame": {"x":0, "y":120, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":120, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-6-0": {
+			"frame": {"x":0, "y":144, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":144, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-7-0": {
+			"frame": {"x":0, "y":168, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":168, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-0-1": {
+			"frame": {"x":24, "y":0, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":0, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-1-1": {
+			"frame": {"x":24, "y":24, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":24, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-2-1": {
+			"frame": {"x":24, "y":48, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":48, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-3-1": {
+			"frame": {"x":24, "y":72, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":72, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-4-1": {
+			"frame": {"x":24, "y":96, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":96, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-5-1": {
+			"frame": {"x":24, "y":120, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":120, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-6-1": {
+			"frame": {"x":24, "y":144, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":144, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-7-1": {
+			"frame": {"x":24, "y":168, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":24, "y":168, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-0-2": {
+			"frame": {"x":48, "y":0, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":0, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-1-2": {
+			"frame": {"x":48, "y":24, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":24, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-2-2": {
+			"frame": {"x":48, "y":48, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":48, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-3-2": {
+			"frame": {"x":48, "y":72, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":72, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-4-2": {
+			"frame": {"x":48, "y":96, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":96, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-5-2": {
+			"frame": {"x":48, "y":120, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":120, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-6-2": {
+			"frame": {"x":48, "y":144, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":144, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-walk-7-2": {
+			"frame": {"x":48, "y":168, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":48, "y":168, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-0": {
+			"frame": {"x":72, "y":0, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":0, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-1": {
+			"frame": {"x":72, "y":24, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":24, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-2": {
+			"frame": {"x":72, "y":48, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":48, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-3": {
+			"frame": {"x":72, "y":72, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":72, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-4": {
+			"frame": {"x":72, "y":96, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":96, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-5": {
+			"frame": {"x":72, "y":120, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":120, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-6": {
+			"frame": {"x":72, "y":144, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":144, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-hurt-7": {
+			"frame": {"x":72, "y":168, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":72, "y":168, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		},
+		"toaster-spinshock-0": {
+			"frame": {"x":96, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":96, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-1": {
+			"frame": {"x":144, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":144, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-2": {
+			"frame": {"x":96, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":96, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-3": {
+			"frame": {"x":144, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":144, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-4": {
+			"frame": {"x":96, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":96, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-5": {
+			"frame": {"x":144, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":144, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-6": {
+			"frame": {"x":96, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":96, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-spinshock-7": {
+			"frame": {"x":144, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":144, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-0-0": {
+			"frame": {"x":192, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":192, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-0-1": {
+			"frame": {"x":216, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":216, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-0-2": {
+			"frame": {"x":240, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":240, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-0-3": {
+			"frame": {"x":264, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":264, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-0-4": {
+			"frame": {"x":312, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":312, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-0-5": {
+			"frame": {"x":360, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":360, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-0-6": {
+			"frame": {"x":408, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":408, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-1-0": {
+			"frame": {"x":432, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":432, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-1-1": {
+			"frame": {"x":456, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":456, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-1-2": {
+			"frame": {"x":480, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":480, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-1-3": {
+			"frame": {"x":504, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":504, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-1-4": {
+			"frame": {"x":552, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":552, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-1-5": {
+			"frame": {"x":600, "y":0, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":600, "y":0, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-1-6": {
+			"frame": {"x":648, "y":0, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":648, "y":0, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-2-0": {
+			"frame": {"x":192, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":192, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-2-1": {
+			"frame": {"x":216, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":216, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-2-2": {
+			"frame": {"x":240, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":240, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-2-3": {
+			"frame": {"x":264, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":264, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-2-4": {
+			"frame": {"x":312, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":312, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-2-5": {
+			"frame": {"x":360, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":360, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-2-6": {
+			"frame": {"x":408, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":408, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-3-0": {
+			"frame": {"x":432, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":432, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-3-1": {
+			"frame": {"x":456, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":456, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-3-2": {
+			"frame": {"x":480, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":480, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-3-3": {
+			"frame": {"x":504, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":504, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-3-4": {
+			"frame": {"x":552, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":552, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-3-5": {
+			"frame": {"x":600, "y":48, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":600, "y":48, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-3-6": {
+			"frame": {"x":648, "y":48, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":648, "y":48, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-4-0": {
+			"frame": {"x":192, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":192, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-4-1": {
+			"frame": {"x":216, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":216, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-4-2": {
+			"frame": {"x":240, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":240, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-4-3": {
+			"frame": {"x":264, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":264, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-4-4": {
+			"frame": {"x":312, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":312, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-4-5": {
+			"frame": {"x":360, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":360, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-4-6": {
+			"frame": {"x":408, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":408, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-5-0": {
+			"frame": {"x":432, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":432, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-5-1": {
+			"frame": {"x":456, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":456, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-5-2": {
+			"frame": {"x":480, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":480, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-5-3": {
+			"frame": {"x":504, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":504, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-5-4": {
+			"frame": {"x":552, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":552, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-5-5": {
+			"frame": {"x":600, "y":96, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":600, "y":96, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-5-6": {
+			"frame": {"x":648, "y":96, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":648, "y":96, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-6-0": {
+			"frame": {"x":192, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":192, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-6-1": {
+			"frame": {"x":216, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":216, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-6-2": {
+			"frame": {"x":240, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":240, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-6-3": {
+			"frame": {"x":264, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":264, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-6-4": {
+			"frame": {"x":312, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":312, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-6-5": {
+			"frame": {"x":360, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":360, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-6-6": {
+			"frame": {"x":408, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":408, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-7-0": {
+			"frame": {"x":432, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":432, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-7-1": {
+			"frame": {"x":456, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":456, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-7-2": {
+			"frame": {"x":480, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":480, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-overheat-7-3": {
+			"frame": {"x":504, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":504, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-7-4": {
+			"frame": {"x":552, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":552, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-7-5": {
+			"frame": {"x":600, "y":144, "w":48, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":600, "y":144, "w":48, "h":48},
+			"sourceSize": {"w": 48, "h": 48}
+		},
+		"toaster-overheat-7-6": {
+			"frame": {"x":648, "y":144, "w":24, "h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":648, "y":144, "w":24, "h":48},
+			"sourceSize": {"w": 24, "h": 48}
+		},
+		"toaster-shadow": {
+			"frame": {"x":840, "y":168, "w":24, "h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":840, "y":168, "w":24, "h":24},
+			"sourceSize": {"w": 24, "h": 24}
+		}
+	},
+
+	"meta": {
+		"image": "../images/toaster.png"
+	}
+}

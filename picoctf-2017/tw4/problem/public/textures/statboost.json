@@ -1,0 +1,23 @@
+{
+	"frames": {
+		"attack-boost-0": { "frame": {"x": 0, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-1": { "frame": {"x": 48, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-2": { "frame": {"x": 96, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-3": { "frame": {"x": 144, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-4": { "frame": {"x": 192, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-5": { "frame": {"x": 240, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"attack-boost-6": { "frame": {"x": 288, "y": 0, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+
+		"defense-boost-0": { "frame": {"x": 0, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-1": { "frame": {"x": 48, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-2": { "frame": {"x": 96, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-3": { "frame": {"x": 144, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-4": { "frame": {"x": 192, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-5": { "frame": {"x": 240, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} },
+		"defense-boost-6": { "frame": {"x": 288, "y": 48, "w": 48, "h": 48}, "sourceSize": {"w": 48, "h": 48} }
+	},
+
+	"meta": {
+		"image": "../images/statboost.png"
+	}
+}

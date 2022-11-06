@@ -8,19 +8,19 @@
 	</thead>
 	<tr>
 		<td rowspan="4">picoCTF 2017</td>
-		<td>Toaster Wars 1</td>
+		<td><a href="./picoctf-2017/tw1">Toaster Wars 1</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>Toaster Wars 2</td>
+		<td><a href="./picoctf-2017/tw2">Toaster Wars 2</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>Toaster Wars 3</td>
+		<td><a href="./picoctf-2017/tw3">Toaster Wars 3</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>
-		<td>Toaster Wars 4</td>
+		<td><a href="./picoctf-2017/tw4">Toaster Wars 4</a></td>
 		<td>Web</td>
 	</tr>
 	<tr>

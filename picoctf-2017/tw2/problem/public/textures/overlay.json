@@ -1,0 +1,15 @@
+{
+	"frames": {
+		"overlay": {
+			"frame": {"x":0, "y":0, "w":312, "h":216},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0, "y":0, "w":312, "h":216},
+			"sourceSize": {"w": 312, "h": 216}
+		}
+	},
+
+	"meta": {
+		"image": "../images/overlay.png"
+	}
+}

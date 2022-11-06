@@ -1,0 +1,16 @@
+var ADJECTIVES = ["good", "new", "old", "great", "high", "small", "large", "long", "young", "right", "early", "big", "late", "full", "far", "low", "bad", "sure", "clear", "likely", "real", "black", "white", "free", "easy", "short", "strong", "true", "hard", "poor", "wide", "simple", "close", "fine", "wrong", "french", "nice", "happy", "red", "sorry", "dead", "heavy", "cold", "ready", "green", "deep", "left", "complete", "hot", "fair", "huge", "rich", "safe", "chief", "light", "warm", "fresh", "cheap", "united", "strange", "soft", "quiet", "quick", "broad", "very", "lovely", "joint", "bright", "average", "inc", "unlikely", "dry", "thin", "slow", "tiny", "wild", "empty", "alone", "narrow", "bloody", "busy", "tall", "clean", "thick", "fast", "rare", "grand", "brief", "grey", "funny", "severe", "vast", "ill", "weak", "brown", "sick", "near", "angry", "well", "guilty", "lucky", "tough", "glad", "yellow", "net", "dear", "healthy", "slight", "friendly", "flat", "keen", "pale", "wet", "firm", "sad", "pure", "sweet", "rough", "absolute", "mere", "fun", "cool", "fit", "extreme", "proud", "mad", "straight", "pink", "smooth", "remote", "pretty", "holy", "honest", "silly", "plain", "still", "round", "fat", "tight", "dirty", "pleasant", "welcome", "deaf", "mean", "blind", "steady", "raw", "clever", "wise", "strict", "loud", "gross", "bare", "modest", "acute", "curious", "sole", "urgent", "sheer", "nasty", "unhappy", "unfair", "faint", "hungry", "just", "spare", "neat", "crazy", "brave", "damp", "secure", "steep", "dull", "lonely", "mild", "casual", "harsh", "fierce", "handsome", "mature", "deviant", "boring", "smart", "wealthy", "lively", "stiff", "drunk", "kind", "blank", "mid", "profound", "shallow", "bold", "crude", "cruel", "rear", "compact", "ugly", "calm", "slim", "divine", "worthy", "unpleasant", "sound", "costly", "lengthy", "polite", "fond", "decent", "purple", "shy", "grim", "noisy", "grave", "mighty", "sunny", "rude", "deadly", "handy", "swift", "sticky", "bleak", "est", "shiny", "dumb", "sore", "ample", "dusty", "petty", "sandy", "overnight", "minute", "tidy", "lazy", "wary", "obscure", "hollow", "awful", "icy", "scarce", "glossy", "naughty", "lean", "risky", "robust", "gloomy", "fancy", "weary", "dim", "tricky", "foul", "filthy", "cosy", "bald", "coarse", "daft"];
+
+var APPLIANCES = ["toaster", "blender", "coffee pot", "microwave", "dishwasher", "oven", "refrigerator", "food processor", "spatula", "skillet", "dutch oven", "freezer", "pressure cooker", "kettle", "whisk", "sink", "griddle", "stove", "ice maker", "hot plate", "rice maker", "waffle iron", "vacuum sealer", "broiler", "pizza cutter", "deep fryer", "cornballer®", "strainer", "slow-cooker", "coffee grinder", "basting brush", "rolling pin"];
+
+module.exports = function(x){
+	var adj = (x >> 5) & 0xff;
+	var appl = (x >> 0) & 0x1f;
+
+	var name = ADJECTIVES[adj] + " " + APPLIANCES[appl];
+
+	name = name.replace(/\b\w+/g, function(txt){
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	});
+
+	return name;
+}
