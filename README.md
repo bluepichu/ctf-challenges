@@ -90,4 +90,21 @@
 		<td><a href="./plaidctf-2022/amongst_ourselves">Amongst Ourselves</a></td>
 		<td>Pwn/Rev/Crypto/Web/Misc</td>
 	</tr>
+	<tr>
+		<td rowspan="4">Plaid CTF 2023</td>
+		<td><a href="./plaidctf-2023/davy_jones_putlocker">Davy Jones' Putlocker</a></td>
+		<td>Web</td>
+	</tr>
+	<tr>
+		<td><a href="./plaidctf-2023/puzzled_pirates_blockade">Puzzled Pirates: Blockade!</a></td>
+		<td>Web</td>
+	</tr>
+	<tr>
+		<td><a href="./plaidctf-2023/poetry">poetry</a></td>
+		<td>Misc</td>
+	</tr>
+	<tr>
+		<td><a href="./plaidctf-2023/the_other_css">The Other CSS</a></td>
+		<td>Crypto</td>
+	</tr>
 </table>
