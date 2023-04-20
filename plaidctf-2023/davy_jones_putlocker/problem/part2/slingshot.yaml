@@ -1,0 +1,22 @@
+title: Davy Jones' Putlocker (Part 2)
+adminPassword: <redacted>
+requirements:
+  password: f252ceec1321fd285398809b
+challenge:
+  timeout: 5 minutes
+  minDifficulty: 20
+  maxDifficulty: 32
+workers: 8
+job:
+  timeout: 5 minutes
+  port: 20000
+  env:
+    ADMIN_PASSWORD:
+      kind: random
+      bytes: 32
+    JWT_SECRET:
+      kind: random
+      bytes: 32
+    FLAG:
+      kind: static
+      value: PCTF{say_what_you_will_about_these_sites_but_they_wont_pull_a_warner_bros_discovery_on_you_and_yeet_37_shows_into_the_void_f0e0079af5e5b05edbf5d248}

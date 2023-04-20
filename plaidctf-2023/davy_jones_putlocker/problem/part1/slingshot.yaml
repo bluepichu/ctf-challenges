@@ -1,0 +1,20 @@
+title: Davy Jones' Putlocker (Part 1)
+adminPassword: <redacted>
+requirements: {}
+challenge:
+  timeout: 5 minutes
+  minDifficulty: 20
+  maxDifficulty: 32
+workers: 1
+job:
+  timeout: 2 minutes
+  port: 20000
+  env:
+    ADMIN_PASSWORD:
+      kind: random
+      bytes: 32
+    JWT_SECRET:
+      kind: random
+      bytes: 32
+    # FLAG: PCTF{i_feel_like_this_flag_should_be_a_one_piece_reference_but_idk_anything_about_one_piece_a918eb11ebc220a0acf3f77634619a74}
+    FLAG: PCTF{sorry_about_all_the_networking_problems..._f252ceec1321fd285398809b}
