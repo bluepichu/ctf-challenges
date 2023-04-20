@@ -30,7 +30,7 @@ async def main():
 	disk_key = phase_3(disk_plaintext, disk_ciphertext)
 	print("disk_key =", disk_key)
 
-	with open("../problem/disks/a.disk", "rb") as f:
+	with open("../problem/disks/b.disk", "rb") as f:
 		flag_ciphertext = f.read()
 
 	player_key_id, player_key = phase_4(disk_ciphertext, disk_key, flag_ciphertext)
@@ -85,23 +85,13 @@ def phase_3(disk_plaintext: bytes, disk_ciphertext: bytes):
 
 @cache("phase_4.pkl")
 def phase_4(disk_ciphertext: bytes, disk_key: bytes, flag_ciphertext: bytes):
-	# flag_nonce = flag_ciphertext[:8]
-	# encrypted_flag_nonce = flag_ciphertext[8:16]
-
 	for i in range(128):
 		disk_key_ciphertext = disk_ciphertext[8 * i:8 * i + 8]
-		# flag_key_ciphertext = flag_ciphertext[16 + 8 * i:16 + 8 * i + 8]
 		lfsr_output = [disk_key_ciphertext[j] ^ disk_key[j] for j in range(8)]
 		valid_keys: list[bytes] = []
 
 		for player_key in get_possible_lfsr_keys(lfsr_output, Mode.DiskKey):
-			# print("Trying", bytes(player_key))
-			# cipher = Cipher(bytes(player_key), Mode.DiskKey)
-			# flag_key = cipher.decrypt(flag_key_ciphertext)
-			# print("flag_key =", flag_key)
-			# cipher = Cipher(flag_key, Mode.DiskKey)
-			# if cipher.decrypt(encrypted_flag_nonce) == flag_nonce:
-				valid_keys.append(bytes(player_key))
+			valid_keys.append(bytes(player_key))
 
 		if len(valid_keys) == 1:
 			return (i, valid_keys[0])

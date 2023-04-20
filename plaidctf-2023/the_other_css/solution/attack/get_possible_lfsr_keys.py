@@ -27,7 +27,6 @@ def get_possible_lfsr_keys(
 			"--",
 			*map(str, output[:10])
 		],
-		# capture stdout but pipe stderr to the terminal
 		stdout = subprocess.PIPE,
 		stderr = sys.stderr.buffer
 	)
