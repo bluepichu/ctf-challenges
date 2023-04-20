@@ -1,0 +1,13 @@
+title: "Puzzled Pirates: Blockade!"
+adminPassword: 45d8a1312b8b4b0cf7f4fcff2e2fe28b
+requirements: {}
+challenge:
+  timeout: 5 minutes
+  minDifficulty: 20
+  maxDifficulty: 32
+workers: 8
+job:
+  timeout: 5 minutes
+  port: 20000
+  env:
+    FLAG: PCTF{puzzle_pirates_was_peak_entertainment_in_2007_a62fffac0bb5ad3617b64ac0d55ad96b}

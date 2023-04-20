@@ -1,0 +1,30 @@
+{
+  "name": "@puzzled/solver",
+  "packageManager": "yarn@3.3.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.mts",
+      "import": "./src/index.mts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/index.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@puzzled/messages": "file:../problem/packages/messages",
+    "immutable": "^4.2.2",
+    "socket.io-client": "^4.6.1",
+    "zod": "^3.20.2"
+  },
+  "resolutions": {
+    "@puzzled/messages": "file:../problem/packages/messages",
+    "@puzzled/types": "file:../problem/packages/types"
+  }
+}
