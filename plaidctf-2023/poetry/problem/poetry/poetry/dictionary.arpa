@@ -1,0 +1,487 @@
+# instructions
+
+## 8086
+aaa AE1
+aaa EY_ EY_ EY_
+aad AA_ D
+aad EY_ EY_ D IY_
+aam AA_ M
+aam EY_ EY_ EH_ M
+aas AA_ S
+aas EY_ EY_ EH_ S
+adc EY_ D IY_ S IY_
+adc AE_ D K AE1 R IY0
+add AE_ D
+and AE_ N D
+call K AO_ L
+cbw S IY_ B IY_ D AH1 B AH0 L Y UW0
+clc K L IH_ K
+clc S IY_ EH_ L S IY_
+cld K L AO_ D
+cld S IY_ EH_ L D IY_
+cli K L IY_
+cli S IY_ EH_ L AY_
+cmc K OW0 M AE1 K
+cmc S IY_ EH_ M S IY_
+cmp K AA_ M P
+cmpsb K AA1 M P S IH0 B
+cmpsb K AA_ M P EH_ S B IY_
+cmpsw K AA1 M P S AA0 W
+cwd K W IH_ D
+cwd S IY_ D AH1 B AH0 L Y UW0 D IY_
+daa D AE_
+daa D IY_ EY_ EY_
+das D AE_ S
+das D IY_ EY_ EH_ S
+dec D EH_ K
+div D IH_ V
+esc EH_ S K
+hlt HH OW_ L T
+hlt HH AA_ L T
+idiv AY1 D IH0 V
+imul AY1 M AH0 L
+in IH_ N
+inc IH_ N K
+int IH_ N T
+into IH1 N T UW0
+iret AY1 R EH0 T
+ja JH AA_
+ja JH EY_ EY_
+jae JH EY_
+jae JH EY_ EY_ IY_
+jb JH AH_ B
+jb JH EY_ B IY_
+jbe JH AY_ B
+jbe JH EY_ B IY_ IY_
+jc JH AH_ K
+jc JH EY_ S IY_
+je JH AH_
+je JH EY_ IY_
+jg JH AH_ G
+jg JH EY_ JH IY_
+jge JH UW_ G
+jge JH EY_ JH IY_ IY_
+jl JH EH_ L
+jl JH EY_ EH_ L
+jle JH EH_ L IY_
+jle JH EY_ EH_ L IY_
+jna JH AH_ N AA_
+jna JH EY_ EH_ N EY_
+jnae JH AH_ N EY_
+jnae JH EY_ EH_ N EY_ IY_
+jnb JH AH_ N AH_ B
+jnb JH EY_ EH_ N B IY_
+jnbe JH AH_ N B IY_
+jnbe JH EY_ EH_ N B IY_ IY_
+jnc JH AH_ N K
+jnc JH EY_ EH_ N S IY_
+jne JH EH_ N IY_
+jne JH EY_ EH_ N IY_
+jng JH EH_ N G
+jng JH EY_ EH_ N JH IY_
+jnge JH EH_ N JH IY_
+jnge JH EY_ EH_ N JH IY_ IY_
+jnl JH EH_ N AH_ L
+jnl JH EY_ EH_ N EH_ L
+jnle JH EH_ N EH_ L IY_
+jnle JH EY_ EH_ N EH_ L IY_
+jno JH EH_ N OW_
+jno JH EY_ EH_ N OW_
+jnp JH AH_ N P
+jnp JH EY_ EH_ N P IY_
+jns JH EH_ N S
+jns JH EY_ EH_ N EH_ S
+jnz JH EH_ N Z
+jnz JH EY_ EH_ N Z IY_
+jo JH OW_
+jo JH EY_ OW_
+jp JH AH_ P
+jp JH EY_ P IY_
+jpe JH AH_ P IY_
+jpe JH EY_ P IY_ IY_
+jpo JH AH_ P OW_
+jpo JH EY_ P IY_ OW_
+js JH EH_ S
+js JH EY_ EH_ S
+js JH AA1 V AH0 S K R IH0 P T
+jz JH AH_ Z
+jz JH EY_ Z IY_
+jcxz JH EY_ S IY_ EH_ K S Z IY_
+jmp JH AH_ M P
+lahf L AE_ F
+lds L AA_ D S
+lds EH_ L D IY_ EH_ S
+lea L IY_
+lea EH_ L IY_ EY_
+les L EH_ S
+les EH_ L IY_ EH_ S
+lock L AA_ K
+lodsb L OW_ D S AH_ B
+lodsb L OW_ D EH_ S B IY_
+lodsw L OW_ D S AA_ W
+lodsw L OW_ D EH_ S D AH1 B AH0 L Y UW0
+loop L UW_ P
+loope L UW1 P IY0
+loopne L UW1 P N IY0
+loopne L UW_ P EH_ N IY_
+loopnz L UW_ P EH_ N Z IY_
+loopz L UW_ P Z
+loopz L UW_ P Z IY_
+mov M UW_ V
+movsb M UW_ V EH_ S B IY_
+movsb M UW1 V S AH0 B
+movsb M UW1 V Z B IY0
+movsw M UW_ V EH_ S D AH1 B AH0 L Y UW0
+mul M AH0 L
+neg N EH_ G
+nop N AA_ P
+not N AA_ T
+or AO_ R
+out AW_ T
+pop P AA_ P
+popf P AA_ P EH_ F
+push P UH_ SH
+pushf P UH_ SH EH_ F
+rcl R EH_ K L
+rcr R EH_ K R
+rep R EH_ P
+repe R EH1 P IY0
+repne R EH1 P N IY0
+repne R EH_ P EH_ N IY_
+repnz R EH_ P EH_ N Z IY_
+repz R EH_ P Z
+repz R EH_ P Z IY_
+ret R EH_ T
+retf R EH_ T EH_ F
+retn R EH_ T EH_ N
+rol R OW_ L
+ror R AO_ R
+sahf S AA_ F
+sal S AE_ L
+sar S AA_ R
+sbb EH_ S B IY_ B IY_
+scasb S K AA1 Z B IY0
+scasw S K AA1 S AA0 W
+scasw S K AA1 Z D AH1 B AH0 L Y UW0
+shl SH EH_ L
+shr SH OW_ R
+stc S T IH_ K
+std S T AH_ D
+sti S T IY_
+stosb S T AA1 Z B IY0
+stosw S T AA1 Z D AH1 B AH0 L Y UW0
+sub S AH_ B
+test T EH_ S T
+wait W EY_ T
+xchg IH0 K S CH EY1 N JH
+xchg EH0 K S CH EY1 N JH
+xlat EH1 K S L AA0 T
+xlat EH0 K S L AA1 T
+xor EH1 K S AO0 R
+xor Z AO_ R
+
+## 80186
+bound B AW_ N D
+enter EH1 N T ER0
+insb IH1 N S AH0 B
+insb IH_ N EH_ S B IY_
+insw IH1 N S AA0 W
+insw IH_ N EH_ S D AH1 B AH0 L Y UW0
+leave L IY_ V
+outsb AW1 T S AH0 B
+outsb AW_ T EH_ S B IY_
+outsw AW1 T S AA0 W
+outsw AW_ T EH_ S D AH1 B AH0 L Y UW0
+popa P AA1 P AH0
+popa P AA_ P EY_
+pusha P UH1 SH AH0
+pusha P UH_ SH EY_
+
+## 80286
+arpl AA1 R P AH0 L
+clts K L AH_ T S
+lar L AA_ R
+lsl L EH1 S AH0 L
+lgdt L AA1 G D AH0 T
+lidt L IH1 D IH0 T
+lldt EH1 L D IH0 T
+ltr L EY1 T ER0
+lmsw L IH1 M S AA0 W
+sgdt S AA1 G D AH0 T
+sidt S IH1 D IH0 T
+sldt S L IH1 D IH0 T
+smsw S IH1 M S AA0 W
+str S T ER_
+verr V EH_ R
+verw V EH_ R D AH1 B AH0 L Y UW0
+
+## 80386
+bsf B EH0 S IH1 F
+bsf B IY_ EH_ S EH_ F
+bsr B EH0 S ER1
+bsr B IY_ EH_ S AA_ R
+bt B IH_ T
+bt B IY_ T IY_
+btc B IH1 T IH0 K
+btc B IY_ T IY_ S IY_
+btr B AH1 T ER0
+btr B IY_ T IY_ AA_ R
+bts B IH_ T S
+bts B IY_ T IY_ EH_ S
+cdq S IY_ D IY_ K Y UW_
+cmpsd K AA1 M P S AA0 D
+cmpsd K AA_ M P EH_ S D IY_
+cwde S IY_ D AH1 B AH0 L Y UW0 D IY_ IY_
+ibts AY1 B IH0 T S
+insd IH1 N S AA0 D
+insd AY_ EH_ N EH_ S D IY_
+iretd IY1 R EH0 T D IY1
+jecxz JH EH_ K EH_ K S Z IY_
+lfs L AE1 F S
+lfs EH_ L EH_ F EH_ S
+lgs L EH_ G S
+lgs EH_ L G IY_ EH_ S
+lss L EH_ S
+lss EH_ L EH_ S EH_ S
+lodsd L OW1 D S AE0 D
+lodsd L OW1 D EH_ S D IY_
+loopw L UW_ P D AH1 B AH0 L Y UW0
+loopew L UW1 P Y UW0
+loopnew L UW1 P N UW0
+loopnew L UW_ P EH_ N IY_ D AH1 B AH0 L Y UW0
+loopnzw L UW_ P EH_ N Z IY_ D AH1 B AH0 L Y UW0
+loopzw L UW1 P Z UW0
+loopzw L UW_ P Z IY_ D AH1 B AH0 L Y UW0
+loopd L UW_ P D
+loopd L UW_ P D IY_
+looped L UW_ P D
+looped L UW_ P IY_ D IY_
+loopned L UW_ P EH_ N D
+loopned L UW_ P EH_ N IY_ D IY_
+loopnzd L UW_ P EH_ N Z IY_ D IY_
+loopzd L UW_ P Z D
+loopzd L UW_ P Z IY_ D IY_
+movsd M UW1 V S AA0 D
+movsd M UW_ V EH_ S D IY_
+movsx M UW1 V S AA0 K S
+movsx M UW_ V EH_ S EH_ K S
+movzx M UW1 V Z AA0 K S
+movzx M UW_ V Z IY_ EH_ K S
+outsd AW1 T S AA0 D
+outsd AW_ T EH_ S D IY_
+popad P AA1 P AA0 D
+popad P AA_ P EY_ D IY_
+popfd P AA1 P F AA0 D
+popfd P AA_ P EH_ F D IY_
+pushad P UH1 SH AA0 D
+pushad P UH_ SH EY_ D IY_
+pushfd P UH1 SH F AA0 D
+pushfd P UH_ SH EH_ F D IY_
+scasd S AA1 Z D
+scasd S AA_ Z D IY_
+seta S EH1 T AH0                                                                # todo: the rest of the set instructions
+seta S EH_ T EY_
+setae S EH1 T EY0
+setae S EH_ T EY_ IY_
+setb S EH1 T AH_ B
+setb S EH_ T B IY_
+setbe S EH1 T B IY0
+setbe S EH_ T B IY_ IY_
+setc S EH1 T AH0 K
+setc S EH_ T S IY_
+sete S EH1 T IY0
+setg S EH1 T AH0 G
+setg S EH_ T G IY_
+setge S EH1 T G IY0
+setge S EH_ T G IY_ IY_
+setl S EH1 T AH0 L
+setl S EH_ T EH_ L
+setle S EH1 T L IY0
+setle S EH_ T EH_ L IY_
+setna S EH1 T N AA0
+setna S EH_ T EH_ N EY_
+setnae S EH1 T N EY0
+setnae S EH_ T EH_ N EY_ IY_
+setnb S EH1 T N AH0 B
+setnb S EH_ T EH_ N B IY_
+setnbe S EH1 T N AH0 B IY0
+setnbe S EH_ T EH_ N B IY_ IY_
+setnc S EH1 T N AH0 K
+setnc S EH_ T EH_ N S IY_
+setne S EH1 T N IY0
+setng S EH_ T N AH_ G
+setng S EH_ T EH_ N JH IY_
+setnge S EH1 T N AH0 G IY0
+setnge S EH_ T EH_ N JH IY_ IY_
+setnl S EH1 T N AH0 L
+setnl S EH_ T EH_ N EH_ L
+setnle S EH1 T N AH0 L IY0
+setnle S EH_ T EH_ N EH_ L IY_
+setno S EH1 T N OW0
+setno S EH_ T EH_ N OW_
+setnp S EH1 T N AA0 P
+setnp S EH_ T EH_ N P IY_
+setns S EH1 T N EH0 S
+setns S EH_ T EH_ N EH_ S
+setnz S EH1 T N EH0 Z
+setnz S EH_ T EH_ N Z IY_
+seto S EH1 T OW0
+seto S EH_ T OW_
+setp S EH1 T AH0 P
+setp S EH_ T P IY_
+setpe S EH1 T P IY0
+setpe S EH_ T P IY_ IY_
+setpo S EH1 T P OW0
+setpo S EH_ T P IY_ OW_
+sets S EH1 T S
+sets S EH_ T EH_ S
+setz S EH1 T Z
+setz S EH_ T Z IY_
+shld SH EH_ L D
+shrd SH AA_ R D
+stosd S T OW1 Z D
+stosd S T OW1 EH_ S D IY_
+xbts EH1 K S B IH0 T S
+xbts EH0 K S B IH1 T S
+
+## 80486
+bswap B IY1 S W AA0 P
+cmpxchg K AA1 M P IH0 K S CH EY0 N JH
+cmpxchg K AA1 M P EH0 K S CH EY0 N JH
+invd IH1 N V AO0 D
+invlpg IH1 N V AO0 L P IH0 G
+wbinvd W EH0 B IH1 N V AO0 D
+xadd EH1 K S AE0 D
+xadd EH0 K S AE1 D
+
+# registers
+
+## general purpose
+### 32 bit
+eax IY_ EY_ EH_ K S
+eax IY_ K S
+ebx IY_ B IY_ EH_ K S
+ebx EH1 B IH0 K S
+ecx IY_ S IY_ EH_ K S
+ecx EH1 K IH0 K S
+edx IY_ D IY_ EH_ K S
+edx EH1 D IH0 K S
+### 16 bit
+ax EY_ EH_ K S
+ax AA_ K S
+bx B IY_ EH_ K S
+bx B EH_ K S
+cx S IY_ EH_ K S
+cx K IH_ K S
+dx D IY_ EH_ K S
+dx D IH_ K S
+### 8 bit
+al EY_ EH_ L
+al AA_ L
+ah EY_ EY_ CH
+ah AA_
+bl B IY_ EH_ L
+bl B EH_ L
+bh B IY_ EY_ CH
+bh B EH_
+cl S IY_ EH_ L
+cl K AA_ L
+ch S IY_ EY_ CH
+dl D IY_ EH_ L
+dl D EH_ L
+dh D IY_ EY_ CH
+dh D EH_
+
+## segment
+cs S IY_ EH_ S
+cs K EH_ S
+ds D IY_ EH_ S
+ds D EH_ S
+es IY_ EH_ S
+es EH_ S
+fs EH_ F EH_ S
+fs F EH_ S
+gs G IY_ EH_ S
+gs G EH_ S
+ss EH_ S EH_ S
+
+## index/pointer
+### 32 bit
+esi IY_ EH_ S AY_
+esi EH_ S IY_
+esi EH_ Z IY_
+edi IY_ D IY_ AY_
+edi EH1 D IY0
+ebp IY_ B IY_ P IY_
+ebp EH1 B IH0 P
+eip IY_ AY_ P IY_
+eip AY_ P
+esp IY_ EH_ S P IY_
+esp EH_ S P
+### 16 bit
+si EH_ S AY_
+si S IY_
+di D IY_ AY_
+di D IY_
+bp B IY_ P IY_
+bp B EH_ P
+ip AY_ P IY_
+ip IH_ P
+sp EH_ S P IY_
+sp EH_ S P
+
+# misc
+
+## indirect addressing
+byte B AY_ T
+word W ER_ D
+dword D IY1 W ER0 D
+ptr P OY1 N T ER0
+
+## constants
+0 Z IH1 R OW0
+0 OW_
+1 W AH_ N
+2 T UW_
+3 TH R IY_
+4 F AO_ R
+5 F AY_ V
+6 S IH_ K S
+7 S EH1 V AH0 N
+8 EY_ T
+9 N AY_ N
+a EH_
+b B IY_
+c S IY_
+d D IY_
+e IY_
+f EH_ F
+x EH_ K S # for hex constants
+
+## other letters (for labels)
+g JH IY_
+h EY_ CH
+i AY_
+j JH EY_
+k K EY_
+l EH_ L
+m EH_ M
+n EH_ N
+o OW_
+p P IY_
+q K Y UW_
+r AA_ R
+s EH_ S
+t T IY_
+u Y UW_
+v V IY_
+w D AH1 B AH0 L Y UW0
+y W AY_
+z Z IY_
+z Z EH_ D
+
+## operators
++ P L AH_ S
+* T AY_ M Z
+* S T AA_ R
+- M AY1 N AH0 S

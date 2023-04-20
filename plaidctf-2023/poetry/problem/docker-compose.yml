@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  poetry:
+    image: plaid:poetry
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./input_asm:/poetry/input_asm
+    restart: always
+    ports:
+      - 1337:1337
+    environment:
+      FLAG1: "pctf{noice}"
+      FLAG2: "pctf{toit}"
+      FLAG3: "pctf{smort}"

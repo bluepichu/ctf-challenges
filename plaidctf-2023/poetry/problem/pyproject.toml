@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "poetry"
+version = "0.1.0"
+description = ""
+authors = ["bluepichu <git@bluepichu.com>", "f0xtr0t <git@jaybosamiya.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+keystone-engine = "^0.9.2"
+unicorn = "^2.0.1.post1"
+capstone = "^4.0.2"
+numpy = "^1.24.1"
+ortools = "^9.5.2237"
+lark = "^1.1.5"
+setuptools = "^67.0.0" # unicorn needs this, but doesn't declare it
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.237"
+black = "^22.12.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["E501"]
