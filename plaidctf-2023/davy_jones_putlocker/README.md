@@ -1,4 +1,4 @@
-# Davy Jones' Putlocker&emsp;<sub><sup>Web, 450 points + 200 points</sup></sub>
+# Davy Jones' Putlocker&emsp;<sub><sup>Web, 350 points + 350 points</sup></sub>
 
 _Special thanks to Luke and zwad3 for testing this problem, and to zaratec for generating the show descriptions, episode descriptions, and cover art._
 
