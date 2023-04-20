@@ -14,6 +14,4 @@ Run `make` in the problem directory to generate the handout.  Launching is handl
 
 ## Solution
 
-TODO: better writeup
-
-This is based on [this TypeORM issue](https://github.com/typeorm/typeorm/issues/9964) (created after the CTF ended).  Optimizing for points requires careful analysis of how Node's event loop works (or tons of trial and error).  See the `solution` directory for my solution, as well as some images documenting the ship movement that the script uses.
+This is based on [this TypeORM issue](https://github.com/typeorm/typeorm/issues/9964) (created after the CTF ended).  Optimizing for points requires careful analysis of how Node's event loop works (or tons of trial and error).  See the `solution` directory for a short writeup, my solution script, and some images documenting the ship movement that the script uses.
